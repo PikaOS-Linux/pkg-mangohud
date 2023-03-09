@@ -15,6 +15,7 @@ cd ./mangohud
 apt-get install build-essential -y
 apt-get install crossbuild-essential-i386 lib32gcc-11-dev -y
 apt-get build-dep ./ -y -a i386
+apt-get install python3-mako -y
 
 # Build package
 dpkg-buildpackage -a i386
