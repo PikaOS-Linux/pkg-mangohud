@@ -16,6 +16,7 @@ apt-get install crossbuild-essential-i386 lib32gcc-11-dev -y
 apt-get build-dep ./ -y -a i386
 
 # Build package
+LOGNAME=root dh_make --createorig -y -l -p mangohud_0.6.8
 dpkg-buildpackage -a i386
 
 # Move the debs to output
