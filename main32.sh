@@ -7,8 +7,8 @@ add-apt-repository ppa:kubuntu-ppa/backports
 add-apt-repository ppa:pikaos/ppa-deps
 # Clone Upstream
 tar -xf mangohud_0.6.8.orig.tar.xz -C ./
-mv ./MangoHud-v0.6.8./mangohud
-cp -rvf ./debian ./mangohud
+mv ./MangoHud-v0.6.8 ./mangohud
+cp -rvf ./debian ./mangohud/
 cd ./mangohud
 
 # Get build deps
@@ -17,7 +17,6 @@ apt-get install crossbuild-essential-i386 lib32gcc-11-dev -y
 apt-get build-dep ./ -y -a i386
 
 # Build package
-LOGNAME=root dh_make --createorig -y -l -p mangohud_0.6.8
 dpkg-buildpackage -a i386
 
 # Move the debs to output

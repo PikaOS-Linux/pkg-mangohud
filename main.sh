@@ -6,8 +6,8 @@ add-apt-repository ppa:kubuntu-ppa/backports
 add-apt-repository ppa:pikaos/ppa-deps
 # Clone Upstream
 tar -xf mangohud_0.6.8.orig.tar.xz -C ./
-mv ./MangoHud-v0.6.8./mangohud
-cp -rvf ./debian ./mangohud
+mv ./MangoHud-v0.6.8 ./mangohud
+cp -rvf ./debian ./mangohud/
 cd ./mangohud
 
 # Get build deps
