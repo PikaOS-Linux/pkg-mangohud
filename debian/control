@@ -48,7 +48,7 @@ Description: Vulkan/OpenGL overlay for monitoring FPS, temperatures, CPU/GPU loa
 
 Package: mangoapp
 Section: misc
-Architecture: any
+Architecture: amd64, arm64
 Multi-Arch: no
 Depends: mangohud (= ${binary:Version}),
          ${misc:Depends},
@@ -63,7 +63,7 @@ Description: Application to render MangoHud with gamescope
 
 Package: mangohudctl
 Section: misc
-Architecture: any
+Architecture: amd64, arm64
 Multi-Arch: no
 Depends: mangohud (= ${binary:Version}),
          ${misc:Depends},
