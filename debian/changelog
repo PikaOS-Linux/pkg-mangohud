@@ -1,3 +1,9 @@
+mangohud (1:0.6.8-99pika5.lunar) lunar; urgency=medium
+
+  * Initial Push to PPA
+
+ -- Ward Nakchbandi <hotrod.master@hotmail.com>  Sat, 15 Oct 2022 18:58:00 +0300
+
 mangohud (1:0.6.8-99pika5) kinetic; urgency=medium
 
   * Initial Push to PPA
