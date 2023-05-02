@@ -33,8 +33,7 @@ Package: mangohud
 Section: misc
 Architecture: any
 Multi-Arch: same
-Depends: ${misc:Depends},
-         ${shlibs:Depends},
+Depends: libc6, libfmt9, libgcc-s1, libspdlog1.10-fmt9, libstdc++6
 Recommends: mangoctl,
 Suggests: libxnvctrl0,
           goverlay,
@@ -50,9 +49,7 @@ Package: mangoapp
 Section: misc
 Architecture: amd64 arm64
 Multi-Arch: no
-Depends: mangohud (= ${binary:Version}),
-         ${misc:Depends},
-         ${shlibs:Depends},
+Depends: mangohud, libc6, libfmt9, libgcc-s1, libgl1, libglew2.2, libglfw3, libspdlog1.10-fmt9, libstdc++6, libx11-6
 Suggests: gamescope,
 Description: Application to render MangoHud with gamescope
  MangoHud is a highly customizable overlay for Vulkan and OpenGL application to
@@ -65,9 +62,7 @@ Package: mangohudctl
 Section: misc
 Architecture: amd64 arm64
 Multi-Arch: no
-Depends: mangohud (= ${binary:Version}),
-         ${misc:Depends},
-         ${shlibs:Depends},
+Depends: mangohud, libc6
 Description: Application to control MangoHud
  MangoHud is a highly customizable overlay for Vulkan and OpenGL application to
  monitoring FPS, temperatures, CPU/GPU load and more.
