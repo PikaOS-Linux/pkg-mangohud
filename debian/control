@@ -21,7 +21,7 @@ Build-Depends: debhelper-compat (= 13),
                libwayland-dev,
                libxnvctrl-dev,
                libxrandr-dev,
-               python3-mako [!i386],
+               python3-mako,
                python3-setuptools,
 Rules-Requires-Root: no
 Standards-Version: 4.6.1
