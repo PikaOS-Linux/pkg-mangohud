@@ -1,6 +1,6 @@
 # Clone Upstream
-tar -xf mangohud_0.6.8.orig.tar.xz -C ./
-mv ./MangoHud-v0.6.8 ./mangohud
+git clone https://github.com/flightlessmango/MangoHud -b v0.6.9-1
+mv ./MangoHud ./mangohud
 cp -rvf ./debian ./mangohud/
 cd ./mangohud
 
