@@ -8,6 +8,9 @@ cd ./mangohud
 apt-get build-dep ./ -y
 
 # Build package
+
+LOGNAME=root dh_make --createorig -y -l -p mangohud_0.6.9.1
+
 dpkg-buildpackage
 
 # Move the debs to output
