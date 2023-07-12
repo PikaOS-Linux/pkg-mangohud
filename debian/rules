@@ -8,7 +8,7 @@ ifeq (i386,$(DEB_HOST_ARCH))
         override_dh_auto_configure:
 	        dh_auto_configure -- \
                         --wrap-mode=default \
-                        -Dwith_nvml=false \
+                        -Dwith_nvml=disabled \
                         -Dinclude_doc=true \
                         -Dwith_xnvctrl=enabled \
                         -Dwith_x11=enabled \
