@@ -4,7 +4,17 @@ Priority: optional
 Maintainer: Debian Games Team <team+pkg-games@tracker.debian.org>
 Uploaders: Stephan Lachnit <stephanlachnit@debian.org>
 Build-Depends: debhelper-compat (= 13),
-               meson,
+               gcc,
+               g++,
+               gcc-multilib,
+               g++-multilib,
+               ninja-build,
+               python3-pip,
+               python3-mako,
+               python3-setuptools,
+               python3-wheel,
+               python3-numpy,
+               python3-matplotlib
                pkg-config,
                glslang-tools,
                mesa-common-dev,
@@ -20,8 +30,6 @@ Build-Depends: debhelper-compat (= 13),
                libwayland-dev,
                libxnvctrl-dev,
                libxrandr-dev,
-               python3-mako,
-               python3-setuptools,
 Rules-Requires-Root: no
 Standards-Version: 4.6.1
 Homepage: https://github.com/flightlessmango/MangoHud
