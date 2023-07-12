@@ -11,7 +11,7 @@ apt-get build-dep ./ -y
 
 LOGNAME=root dh_make --createorig -y -l -p mangohud_0.6.9.1
 
-dpkg-buildpackage
+dpkg-buildpackage --no-sign
 
 # Move the debs to output
 cd ../
