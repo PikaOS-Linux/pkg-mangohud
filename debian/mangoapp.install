@@ -1,4 +1,3 @@
 usr/bin/mangoapp
 usr/lib/*/mangohud/libMangoApp.so
-usr/share/vulkan/implicit_layer.d/*
 usr/share/man/man1/mangoapp.1

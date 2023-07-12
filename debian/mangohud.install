@@ -1,6 +1,6 @@
 usr/lib/*/mangohud/libMangoHud.so
 usr/lib/*/mangohud/libMangoHud_dlsym.so
-usr/share/vulkan/implicit_layer.d/MangoHud.json
+usr/share/vulkan/implicit_layer.d/*
 usr/share/doc/mangohud/MangoHud.conf.example
 usr/bin/mangohud
 usr/share/man/man1/mangohud.1
