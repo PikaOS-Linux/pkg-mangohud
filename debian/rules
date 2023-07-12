@@ -7,6 +7,7 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
+        --wrap-mode=default \\
         -Dwith_nvml=enabled \
         -Dinclude_doc=true \
         -Dwith_xnvctrl=enabled \
