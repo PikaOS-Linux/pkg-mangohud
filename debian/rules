@@ -4,16 +4,30 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 %:
 	dh $@
-
-override_dh_auto_configure:
-	dh_auto_configure -- \
-        --wrap-mode=default \
-        -Dwith_nvml=enabled \
-        -Dinclude_doc=true \
-        -Dwith_xnvctrl=enabled \
-        -Dwith_x11=enabled \
-        -Dwith_wayland=enabled \
-        -Dwith_dbus=enabled \
-        -Dmangoapp=true \
-        -Dmangohudctl=true \
-        -Dmangoapp_layer=true
+ifeq (i386,$(DEB_HOST_ARCH))
+        override_dh_auto_configure:
+	        dh_auto_configure -- \
+                        --wrap-mode=default \
+                        -Dwith_nvml=false \
+                        -Dinclude_doc=true \
+                        -Dwith_xnvctrl=enabled \
+                        -Dwith_x11=enabled \
+                        -Dwith_wayland=enabled \
+                        -Dwith_dbus=enabled \
+                        -Dmangoapp=true \
+                        -Dmangohudctl=true \
+                        -Dmangoapp_layer=true
+else
+        override_dh_auto_configure:
+	        dh_auto_configure -- \
+                        --wrap-mode=default \
+                        -Dwith_nvml=enabled \
+                        -Dinclude_doc=true \
+                        -Dwith_xnvctrl=enabled \
+                        -Dwith_x11=enabled \
+                        -Dwith_wayland=enabled \
+                        -Dwith_dbus=enabled \
+                        -Dmangoapp=true \
+                        -Dmangohudctl=true \
+                        -Dmangoapp_layer=true
+endif
