@@ -7,10 +7,12 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
-        -Duse_system_spdlog=enabled \
         -Dwith_nvml=enabled \
+        -Dinclude_doc=true \
         -Dwith_xnvctrl=enabled \
+        -Dwith_x11=enabled \
         -Dwith_wayland=enabled \
+        -Dwith_dbus=enabled \
         -Dmangoapp=true \
         -Dmangohudctl=true \
         -Dmangoapp_layer=true
