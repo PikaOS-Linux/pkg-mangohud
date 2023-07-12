@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Debian Games Team <team+pkg-games@tracker.debian.org>
 Uploaders: Stephan Lachnit <stephanlachnit@debian.org>
 Build-Depends: debhelper-compat (= 13),
+               meson,
                gcc,
                g++,
                gcc-multilib,
