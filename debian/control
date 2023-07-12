@@ -14,7 +14,7 @@ Build-Depends: debhelper-compat (= 13),
                python3-setuptools,
                python3-wheel,
                python3-numpy,
-               python3-matplotlib
+               python3-matplotlib,
                pkg-config,
                glslang-tools,
                mesa-common-dev,
