@@ -1,5 +1,5 @@
 # Clone Upstream
-git clone https://github.com/flightlessmango/MangoHud -b v0.6.9-1
+git clone https://github.com/flightlessmango/MangoHud -b v0.7.0
 mv ./MangoHud ./mangohud
 cp -rvf ./debian ./mangohud/
 cd ./mangohud
@@ -9,7 +9,7 @@ apt-get build-dep ./ -y
 
 # Build package
 
-LOGNAME=root dh_make --createorig -y -l -p mangohud_0.6.9.1
+LOGNAME=root dh_make --createorig -y -l -p mangohud_0.7.0
 
 dpkg-buildpackage --no-sign
 
