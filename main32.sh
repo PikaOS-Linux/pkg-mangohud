@@ -6,6 +6,7 @@ cd ./mangohud
 
 # Get build deps
 apt-get build-dep ./ -y
+apt-get install libvulkan-dev -y
 
 # Build package
 
